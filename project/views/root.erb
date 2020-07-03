@@ -4,10 +4,12 @@
   .body{
     padding-top: 5rem;
   }
+  .bodyButton{
+    padding-top: 1rem;
+  }
   .text-center{
     padding-top: 7rem;
     width: 36rem;
-    
   }
 </style>
 
@@ -128,7 +130,7 @@
 
     </div> %>
 
-<%# <!-- /Карусель. Нужно вставить изображения -->
+<%# <!-- /Карусель. Нужно вставить изображения и добавить файл джс-->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -145,8 +147,8 @@
    %>
    
   <main role="main">
-    <body class="text-center">
-      <form class="form-signin">
+  <div class = "body">
+      <%# <form class="form-signin">
         <img class="mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -160,10 +162,74 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
-      </form>
-    </body>
+      </form> %>
+      <h4 class = "left-text" >Данные заказа:</h4>
 
+       <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">ФИО</span>
+        </div>
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Желаемое время выдачи заказа</span>
+        </div>
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+       <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Номер телефона                  </span>
+        </div>
+       <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <h5 class = "left-text" >Корзина:</h5>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        Товар 1 <span class="badge badge-primary">4</span>
+        </li>
+
+        <li class="list-group-item">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        Товар 2 <span class="badge badge-primary">2</span>
+        </li>
+
+        <li class="list-group-item">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        Товар 3 <span class="badge badge-primary">1</span>
+        </li>
+
+        <li class="list-group-item">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        Товар 4 <span class="badge badge-primary">5</span>
+        </li>
+
+        <li class="list-group-item">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
+        Товар 5 <span class="badge badge-primary">3</span>
+        </li>
+      </ul>
+</div>
+<div class = "bodyButton">
+        <button type="button" class="btn btn-primary">Оформить заказ</button>
+</div>
     <hr>
+
     <footer class="container">
       <p>© Company 2017-2020</p>
     </footer>
