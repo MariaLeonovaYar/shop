@@ -9,15 +9,23 @@ class App < Roda
       view :root
     end
 
-    r.on 'login' do
+    r.on 'home' do
       r.get do
-        view :login
-      end
-
-      r.post do
-        @user = r.params['user']
-        view :login # Не делайте так!!!!! Если всё хорошо redirect на страницу с информацией
+        view :home
       end
     end
+
+    r.on 'order' do
+      r.get do
+        view :root
+      end
+    end
+    
+    r.on 'shop' do
+      r.get do
+        view :shop
+      end
+    end
+    
   end
 end
