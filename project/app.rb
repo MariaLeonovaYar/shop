@@ -26,6 +26,12 @@ class App < Roda
         view :shop
       end
     end
+
+    r.on 'contacts' do
+      r.get do
+        view :contacts
+      end
+    end
     
   end
 end
