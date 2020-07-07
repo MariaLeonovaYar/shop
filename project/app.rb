@@ -6,7 +6,7 @@ class App < Roda
 
   route do |r|
     r.root do
-      view :root
+      view :home
     end
 
     r.on 'home' do
