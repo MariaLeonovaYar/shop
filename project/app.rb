@@ -27,6 +27,18 @@ class App < Roda
       end
     end
 
+    r.on 'shop_copy' do
+      r.get do
+        view :shop_copy
+      end
+    end
+
+    r.on 'shop_copy_2' do
+      r.get do
+        view :shop_copy_2
+      end
+    end
+
     r.on 'contacts' do
       r.get do
         view :contacts
