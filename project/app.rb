@@ -44,6 +44,12 @@ class App < Roda
         view :contacts
       end
     end
+
+    r.on 'LK' do
+      r.get do
+        view :LK
+      end
+    end
     
   end
 end
